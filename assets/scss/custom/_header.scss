@@ -1,0 +1,41 @@
+.uk-navbar-nav{
+    & > li > a {
+        text-transform: none;
+    }
+}
+
+#menuPrimary{
+    height: 100px;
+    .uk-logo{
+        align-items: center;
+        height: 100%;
+        svg{
+            max-width: 133.36px;
+            max-height: 142.82px;
+            margin-top: -43px;
+            margin-right: 10px;
+            @media (max-width: $breakpoint-small) {
+                max-width: 70px;
+                max-height: 70px;
+                margin-top: 0px;
+            }
+        }
+        .title{
+            font-size: $fs-large;
+            text-transform: uppercase;
+            font-weight: $fw-bold;
+            line-height: 1;
+            margin: 0;
+            @media (max-width: $breakpoint-small) {
+                font-size: $fs-big;
+            }
+        }
+        .desc{
+            line-height: 1;
+            margin: 0;
+            font-size: $fs-small;
+            font-weight: $fw-normal;
+            text-transform: lowercase;
+        }
+    }
+}

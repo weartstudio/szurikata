@@ -1,0 +1,58 @@
+// 1. Own variables
+$c-primary: #242c6d;
+$c-secondary: #ff9f34;
+$c-light: #f2f2f8;
+
+$c-black: #333333;
+$c-white: #ffffff;
+
+$fs-small: 14px;
+$fs-normal: 16px;
+$fs-big: 20px;
+$fs-large: 28px;
+$fs-title: 38px;
+
+$fw-normal: 400;
+$fw-semibold: 500;
+$fw-bold: 700;
+
+$ff-base: "Roboto", sans-serif;
+$ff-title: "Montserrat", sans-serif;
+
+// UIKIT VARS
+$global-primary-background: $c-primary;
+$text-secondary-color: $c-secondary;
+$global-muted-background: $c-light;
+$global-color: $c-black;
+$inverse-global-color: $c-white;
+$global-font-family: $ff-base;
+$base-heading-font-family: $ff-title;
+$global-small-font-size: $fs-small;
+
+$navbar-nav-item-height: 60px;
+$navbar-nav-item-font-size: 1rem;
+$navbar-nav-item-color: $c-primary;
+$navbar-nav-item-hover-color: $c-primary;
+$navbar-nav-item-onclick-color: $c-primary;
+$navbar-nav-item-hover-color: $c-primary;
+$inverse-navbar-nav-item-color: $c-white;
+$inverse-navbar-nav-item-hover-color: $c-secondary;
+$inverse-navbar-nav-item-onclick-color: $c-secondary;
+$inverse-navbar-nav-item-active-color: $c-secondary;
+
+
+// 2. Import default variables and available mixins.
+@import "variables-theme";
+@import "mixins-theme";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() {
+	color: #000;
+}
+
+// 4. Import UIkit.
+@import "uikit-theme";
+
+// 5. Custom styles
+// - ha van alulvonás, akkor sass-nál nem kell a .css-t kiírni
+@import "custom/import";

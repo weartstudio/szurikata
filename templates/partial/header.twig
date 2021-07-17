@@ -1,13 +1,18 @@
 {# secondary-menu #}
-<div id="menuSecondary" class="w-background-header-footer">
-    <nav class="uk-container uk-container-large" uk-navbar>
+<div id="menuSecondary" class="uk-background-default uk-visible@s">
+    <nav class="uk-container" uk-navbar>
 
         <div class="uk-navbar-right">
             {% if menuSecondary %}
                 <ul class="uk-navbar-nav">
                 {% for item in menuSecondary.get_items %}
-                    <li class="{% if item.current %}uk-active{% endif %}">
-                        <a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+                    <li>
+                        <a target="{{ item.target }}" href="{{ item.link }}">
+                            <span class="uk-text-small">
+                                <span class=" {{ item.classes | join(' ') }} uk-text-secondary uk-margin-small-right"></span>
+                                <span class="text">{{ item.title }}</span>
+                            </span>
+                        </a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -18,11 +23,15 @@
 </div>
 
 {# main-menu #}
-<nav class="uk-container uk-container-large" uk-navbar>
+<nav id="menuPrimary" class="uk-container uk-light" uk-navbar>
 
     <div class="uk-nav-left">
         <a class="uk-navbar-item uk-logo" href="{{site.url}}">
             <svg><use href="#logo"></svg>
+            <div class="description">
+                <h1 class="title">{{ site.title }}</h1>
+                <p class="desc">{{ site.description }}</p>
+            </div>
         </a>
     </div>
 
@@ -32,7 +41,7 @@
             {% for item in menuPrimary.get_items %}
                 <li class="{% if item.current %}uk-active{% endif %}">
                     <a target="{{ item.target }}" href="{{ item.link }}">
-                        <span class="uk-text-uppercase {{ item.classes | join(' ') }}">{{ item.title }}</span>
+                        {{ item.title }}
                     </a>
                 </li>
             {% endfor %}
