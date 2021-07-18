@@ -54,7 +54,7 @@
 
 
 <div id="w-mobile-menu" uk-offcanvas="flip: true">
-    <div class="uk-offcanvas-bar uk-background-primary">
+    <div class="uk-offcanvas-bar uk-background-dark">
 
         <button class="uk-offcanvas-close" type="button" uk-close></button>
 
@@ -63,6 +63,22 @@
             {% for item in menuPrimary.get_items %}
                 <li class="{% if item.current %}uk-active{% endif %}">
                     <a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% if menuSecondary %}
+            <hr>
+            <ul class="uk-nav uk-margin-top">
+            {% for item in menuSecondary.get_items %}
+                <li>
+                    <a target="{{ item.target }}" href="{{ item.link }}">
+                        <span class="uk-text-small">
+                            <span class=" {{ item.classes | join(' ') }} uk-text-secondary uk-margin-small-right"></span>
+                            <span class="text">{{ item.title }}</span>
+                        </span>
+                    </a>
                 </li>
             {% endfor %}
             </ul>
