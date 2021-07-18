@@ -1,0 +1,21 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="uk-section uk-container uk-container-xsmall">
+
+        <article class="w-tease-post" id="tease-{{post.ID}}">
+
+            <h1>{{post.title}}</h1>
+
+            <hr>
+
+            {% if post.get_thumbnail %}
+                <img src="{{post.thumbnail.src}}" />
+            {% endif %}
+
+            {{post.content}}
+
+        </article>
+
+	</div>
+{% endblock %}

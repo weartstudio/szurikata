@@ -1,9 +1,28 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<h2>{{ foo }}</h2>
-	<p>{{ qux }}</p>
-	{% for post in posts %}
+	<div class="uk-section uk-container uk-container-xsmall">
+		<h1 class="uk-h4 uk-margin-vertical uk-text-uppercase">Blog</h1>
+		<hr>
+		{% for post in posts %}
 
-	{% endfor %}
+			<article uk-grid class="w-tease-post" id="tease-{{post.ID}}">
+
+				{% if post.get_thumbnail %}
+					<div class="uk-width-1-3">
+						<a href="{{post.link}}"><img src="{{post.thumbnail.src}}" /></a>
+					</div>
+				{% endif %}
+
+				<div class="uk-width-expand@s">
+					<h2 class="uk-h2 uk-margin-remove"><a href="{{post.link}}">{{post.title}}</a></h2>
+					<p>{{post.preview.read_more('Tovább olvasom') }}</p>
+				</div>
+
+			</article>
+			<hr>
+		{% endfor %}
+
+		{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+	</div>
 {% endblock %}
