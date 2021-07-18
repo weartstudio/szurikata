@@ -28,27 +28,27 @@ Class svgInsert extends Singleton
                 <g id="pawprint" transform="translate(0 -49.539)">
                     <g id="Group_4" data-name="Group 4" transform="translate(12.894 68.355)">
                     <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
-                        <path id="Path_11" data-name="Path 11" d="M141.115,213.938a19.491,19.491,0,0,0-13.908-5.718,19.739,19.739,0,0,0-19.537,19.8v2.771a11.023,11.023,0,0,0,16.256,9.7,7.038,7.038,0,0,1,6.7,0,11.023,11.023,0,0,0,16.256-9.7v-2.962A19.476,19.476,0,0,0,141.115,213.938Z" transform="translate(-107.67 -208.22)" fill="#242c6d"/>
+                        <path id="Path_11" data-name="Path 11" d="M141.115,213.938a19.491,19.491,0,0,0-13.908-5.718,19.739,19.739,0,0,0-19.537,19.8v2.771a11.023,11.023,0,0,0,16.256,9.7,7.038,7.038,0,0,1,6.7,0,11.023,11.023,0,0,0,16.256-9.7v-2.962A19.476,19.476,0,0,0,141.115,213.938Z" transform="translate(-107.67 -208.22)"/>
                     </g>
                     </g>
                     <g id="Group_6" data-name="Group 6" transform="translate(0 62.634)">
                     <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
-                        <path id="Path_12" data-name="Path 12" d="M12.921,156.627l-1.061-.771a7.479,7.479,0,0,0-10.435,1.653h0a7.479,7.479,0,0,0,1.653,10.435l1.061.771a7.471,7.471,0,1,0,8.782-12.088Z" transform="translate(0 -154.432)" fill="#242c6d"/>
+                        <path id="Path_12" data-name="Path 12" d="M12.921,156.627l-1.061-.771a7.479,7.479,0,0,0-10.435,1.653h0a7.479,7.479,0,0,0,1.653,10.435l1.061.771a7.471,7.471,0,1,0,8.782-12.088Z" transform="translate(0 -154.432)"/>
                     </g>
                     </g>
                     <g id="Group_8" data-name="Group 8" transform="translate(49.003 62.802)">
                     <g id="Group_7" data-name="Group 7">
-                        <path id="Path_13" data-name="Path 13" d="M405.544,158.854a7.479,7.479,0,0,0-10.435-1.653l-1.061.771a7.471,7.471,0,0,0,8.783,12.088l1.061-.771A7.479,7.479,0,0,0,405.544,158.854Z" transform="translate(-390.971 -155.777)" fill="#242c6d"/>
+                        <path id="Path_13" data-name="Path 13" d="M405.544,158.854a7.479,7.479,0,0,0-10.435-1.653l-1.061.771a7.471,7.471,0,0,0,8.783,12.088l1.061-.771A7.479,7.479,0,0,0,405.544,158.854Z" transform="translate(-390.971 -155.777)"/>
                     </g>
                     </g>
                     <g id="Group_10" data-name="Group 10" transform="translate(14.808 49.539)">
                     <g id="Group_9" data-name="Group 9">
-                        <path id="Path_14" data-name="Path 14" d="M133.811,58.025l-1.079-3.32a7.471,7.471,0,1,0-14.211,4.617l1.079,3.32a7.469,7.469,0,0,0,9.414,4.8h0a7.471,7.471,0,0,0,4.8-9.414Z" transform="translate(-118.152 -49.539)" fill="#242c6d"/>
+                        <path id="Path_14" data-name="Path 14" d="M133.811,58.025l-1.079-3.32a7.471,7.471,0,1,0-14.211,4.617l1.079,3.32a7.469,7.469,0,0,0,9.414,4.8h0a7.471,7.471,0,0,0,4.8-9.414Z" transform="translate(-118.152 -49.539)"/>
                     </g>
                     </g>
                     <g id="Group_12" data-name="Group 12" transform="translate(34.164 49.61)">
                     <g id="Group_11" data-name="Group 11" transform="translate(0 0)">
-                        <path id="Path_15" data-name="Path 15" d="M283.448,50.441a7.479,7.479,0,0,0-9.414,4.8l-1.079,3.32a7.471,7.471,0,1,0,14.211,4.617l1.079-3.32A7.48,7.48,0,0,0,283.448,50.441Z" transform="translate(-272.586 -50.075)" fill="#242c6d"/>
+                        <path id="Path_15" data-name="Path 15" d="M283.448,50.441a7.479,7.479,0,0,0-9.414,4.8l-1.079,3.32a7.471,7.471,0,1,0,14.211,4.617l1.079-3.32A7.48,7.48,0,0,0,283.448,50.441Z" transform="translate(-272.586 -50.075)"/>
                     </g>
                     </g>
                 </g>

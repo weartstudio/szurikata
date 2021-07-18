@@ -1,27 +1,69 @@
-<section class="uk-section uk-background-primary">
+<section id="contact" class="uk-section uk-background-primary">
     <div class="uk-container">
 
         <div class="uk-child-width-expand@s" uk-grid>
 
             {# rendelési idő #}
-            <div>
-                <h4 class="uk-text-secondary">Rendelési idő</h4>
-                <ul>
-                    {{ dump(options.orderTime) }}
+            <div class="w-order-time">
+                <h4 class="uk-text-secondary">
+                    <svg><use href="#mancs"></svg>
+                    Rendelési idő
+                </h4>
 
+                {% for item in options.orderTime %}
+                <div class="uk-flex uk-margin-small-bottom uk-flex-middle">
+                    <div class="uk-width-expand uk-text-bold">{{ item.day }}</div>
+                    <div class="uk-width-auto">
+                        {% if item.from %}
+                            <span>{{ item.from }}</span>
+                        {% endif %}
+                        {% if item.to %}
+                            -
+                            <span>{{ item.to }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
 
-                    {% for item in options.orderTime %}
-                    <li class="uk-flex">
-                        <div class="uk-expand">{{ item.day }}</div>
-                    </li>
-                    {% endfor %}
-                </ul>
+            {# elérhetőségeink #}
+            <div class="w-contacts">
+                <h4 class="uk-text-secondary">
+                    <svg><use href="#mancs"></svg>
+                    Elérhetőségeink
+                </h4>
+
+                {% for item in options.contacts %}
+                <div class="uk-flex uk-margin-small-bottom">
+                    <div class="uk-width-auto uk-margin-small-right"><span class="{{ item.icon }}"></span></div>
+                    <div class="uk-width-expand">
+                        {% if item.type %}
+                            <p class="uk-text-bold uk-margin-remove">{{ item.type }}</p>
+                        {% endif %}
+                        {% if item.data %}
+                            <p class="uk-margin-remove">{{ item.data }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            {# térkép #}
+            <div class="w-contacts">
+                <h4 class="uk-text-secondary">
+                    <svg><use href="#mancs"></svg>
+                    Térkép
+                </h4>
+                <div class="uk-cover-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.0179736000896!2d19.699211115935853!3d47.450589079174684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741a5d5e894a659%3A0xff2e99e51c1e185a!2sSzuri-K%C3%A1ta!5e0!3m2!1shu!2shu!4v1626627223735!5m2!1shu!2shu" width="600" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
             </div>
 
         </div>
 
         {# copyright #}
-        <div class="uk-text-small uk-text-center">
+        <div class="uk-text-small uk-text-center uk-padding uk-padding-remove-left uk-padding-remove-right uk-padding-remove-bottom">
             <hr>
             <p class="uk-margin-remove-bottom">
                 {{ options.copyright }} <br>

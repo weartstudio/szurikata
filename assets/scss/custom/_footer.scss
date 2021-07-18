@@ -1,0 +1,40 @@
+#w-footer{
+
+
+    h4.uk-text-secondary{
+        color: $c-secondary !important;
+        display: flex;
+        align-items: center;
+        position: relative;
+        svg{
+            width: 56px;
+            height: 45px;
+            fill: rgba($c-white,14%) !important;
+            position: absolute;
+            left: -1.5rem;
+            top: -1rem;
+        }
+    }
+
+    .w-order-time{
+        .uk-width-auto{
+            display: flex;
+            align-items: center;
+            span{
+                display: block;
+                padding: 5px 12px;
+                background: rgba($c-white,20%);
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .w-contacts{
+        .uk-width-auto{
+            span{
+                color: $c-secondary !important
+            }
+        }
+    }
+
+}
