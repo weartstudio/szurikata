@@ -1,1 +1,48 @@
 .uk-text-bolder { font-weight: $fw-semibold; }
+.uk-button {
+    font-weight: $fw-semibold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+}
+
+.uk-border-bold{
+    box-shadow: 0 0 0 10px $c-light;
+    margin-top: -40px;
+    background: $c-white;
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $c-light;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.uk-section-title{
+    h4,.uk-h4{ margin: 0; margin-bottom: 1rem;}
+    h1,.uk-h1,
+    h2,.uk-h2{ margin: 0; }
+    text-align: center;
+}
+
+h4,.uk-h4{
+    text-transform: uppercase;
+    font-family: $ff-base;
+    font-weight: $fw-semibold;
+    color: $c-primary;
+    letter-spacing: 2px;
+}
+
+h5,.uk-h5{
+    font-family: $ff-base;
+    font-weight: $fw-semibold;
+    color: $c-primary;
+}

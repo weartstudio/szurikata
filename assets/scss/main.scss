@@ -8,7 +8,7 @@ $c-white: #ffffff;
 
 $fs-small: 14px;
 $fs-normal: 16px;
-$fs-big: 20px;
+$fs-big: 18px;
 $fs-large: 28px;
 $fs-title: 38px;
 
@@ -25,10 +25,8 @@ $text-secondary-color: $c-secondary;
 $global-muted-background: $c-light;
 $global-color: $c-black;
 $inverse-global-color: $c-white;
-$global-font-family: $ff-base;
-$base-heading-font-family: $ff-title;
-$global-small-font-size: $fs-small;
 
+//navbar
 $navbar-nav-item-height: 60px;
 $navbar-nav-item-font-size: 1rem;
 $navbar-nav-item-color: $c-primary;
@@ -40,6 +38,22 @@ $inverse-navbar-nav-item-hover-color: $c-secondary;
 $inverse-navbar-nav-item-onclick-color: $c-secondary;
 $inverse-navbar-nav-item-active-color: $c-secondary;
 
+// text
+$global-font-family: $ff-base;
+$base-heading-font-family: $ff-title;
+$global-small-font-size: $fs-small;
+$base-heading-color: $c-secondary;
+$global-2xlarge-font-size: $fs-title;
+$global-xlarge-font-size: $fs-title;
+$global-large-font-size: $fs-big;
+$global-medium-font-size: $fs-big;
+$base-h5-font-size: $fs-big;
+
+//button
+$button-font-size: 1rem;
+$button-secondary-background: $c-secondary;
+$global-control-height: 50px;
+$button-padding-horizontal: 50px;
 
 // 2. Import default variables and available mixins.
 @import "variables-theme";
