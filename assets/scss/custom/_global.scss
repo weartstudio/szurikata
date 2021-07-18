@@ -46,3 +46,47 @@ h5,.uk-h5{
     font-weight: $fw-semibold;
     color: $c-primary;
 }
+
+.w-quote-block{
+    .uk-container{
+        position: relative;
+
+        /* image */
+        .uk-width-auto{
+            position: relative;
+            z-index: 1;
+            .first,
+            .second{
+                background: $c-white;
+                padding: 1rem;
+                @extend .uk-box-shadow-medium;
+            }
+            .first{
+                transform: rotate(-10deg);
+                position: relative;
+                z-index: 1;
+            }
+            .second{
+                transform: rotate(10deg);
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 0;
+            }
+        }
+        /* end */
+
+        .text{
+            font-size: $fs-large;
+            font-style: italic;
+        }
+
+        svg.quotion{
+            position: absolute;
+            top: 0;
+            left: -10px;
+            height: 100%;
+            z-index: 0;
+        }
+    }
+}

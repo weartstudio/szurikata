@@ -9,7 +9,7 @@ $c-white: #ffffff;
 $fs-small: 14px;
 $fs-normal: 16px;
 $fs-big: 18px;
-$fs-large: 28px;
+$fs-large: 22px;
 $fs-title: 38px;
 
 $fw-normal: 400;
@@ -54,6 +54,9 @@ $button-font-size: 1rem;
 $button-secondary-background: $c-secondary;
 $global-control-height: 50px;
 $button-padding-horizontal: 50px;
+
+// dotnav
+$dotnav-item-active-background: $c-secondary;
 
 // 2. Import default variables and available mixins.
 @import "variables-theme";

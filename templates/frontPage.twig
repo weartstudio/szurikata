@@ -25,6 +25,8 @@
 
 		</header>
 
+
+        {# services #}
         <section id="services" class="uk-container uk-margin-minus">
             <div class="uk-padding uk-border-bold">
                 <div class="uk-section-title uk-margin-large-bottom">
@@ -49,6 +51,145 @@
                 <div class="uk-flex uk-flex-center uk-margin-vertical w-services">
                     <button class="uk-button uk-button-secondary" uk-toggle="target: .w-services; animation: uk-animation-fade; queued: true">Még több</button>
                 </div>
+            </div>
+        </section>
+
+
+        {# idézetek 1 #}
+        <section class="uk-section w-quote-block">
+            <div class="uk-container uk-container-small">
+
+                <div class="uk-position-relative" uk-slider="autoplay: true; infinite: true">
+                    <ul class="uk-slider-items">
+                        {% for item in post.meta('testimonials') %}
+                        <li class="uk-width-1-1 uk-margin-left uk-margin-remove-top" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="first">
+                                    <div class="uk-cover-container uk-height-small uk-width-small">
+                                        <img src="{{ Image(item.image).src }}" uk-cover>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="uk-cover-container uk-height-small uk-width-small">
+                                        <img src="{{ Image(item.image).src }}" uk-cover>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand@s uk-position-relative">
+                                <svg class="quotion"><use href="#quote"></svg>
+                                <div class="uk-height-1-1 uk-flex uk-flex-middle uk-position-relative">
+                                    <div class="uk-margin-top">
+                                        <div class="text">
+                                            {{ item.text }}
+                                        </div>
+                                        <p class="uk-text-primary uk-text-bold uk-margin-remove">{{ item.name }}</p>
+                                        <a href="https://www.facebook.com/Szurikata/reviews/" class="uk-text-small uk-link-text">
+                                            <span uk-icon="icon:facebook; ratio: 0.75"></span>
+                                            még több vélemény a Facebookon
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        {# rólunk #}
+        <section id="about" class="uk-section uk-background-muted">
+            <div class="uk-container">
+                <div class="uk-section-title">
+                    <h4>{{ post.meta('s4-subtitle') }}</h4>
+                    <h2>{{ post.meta('s4-title') }}</h2>
+                </div>
+                <div class="uk-child-width-1-2@s uk-padding uk-padding-remove-left uk-padding-remove-right uk-text-lead" uk-grid>
+                    <div class="left">{{ post.meta('s4-text-left') }}</div>
+                    <div class="right">{{ post.meta('s4-text-right') }}</div>
+                </div>
+                <div class="uk-flex uk-flex-center uk-margin-bottom">
+                    <a href="#contact" class="uk-button uk-button-secondary">kapcsolat</a>
+                </div>
+            </div>
+        </section>
+
+
+        {# csapatunk #}
+        <section id="team" class="uk-container uk-margin-minus">
+            <div class="uk-padding uk-border-bold">
+                <div class="uk-section-title uk-padding uk-padding-remove-top uk-padding-remove-left  uk-padding-remove-right">
+                    <h4>{{ post.meta('s5-subtitle') }}</h4>
+                    <h2>{{ post.meta('s5-title') }}</h2>
+                </div>
+
+                <div uk-slider="autoplay: true; infinite: true">
+                    <div class="uk-slider-items" uk-grid>
+                    {% for item in post.meta('s5-team') %}
+                        <div class="uk-width-1-3@s uk-text-center">
+                            <div class="uk-flex uk-flex-center">
+                                <div class="uk-width-auto uk-padding-small uk-background-default uk-box-shadow-medium uk-border-circle">
+                                    <div class="uk-cover-container uk-width-small uk-height-small uk-border-circle">
+                                        <img src="{{ Image(item.image).src }}" uk-cover>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="uk-margin">{{ item.name }}</h5>
+                            {{ item.text }}
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        {# idézetek 2 #}
+        <section class="uk-section w-quote-block">
+            <div class="uk-container uk-container-small">
+
+                <div class="uk-position-relative" uk-slider="autoplay:true; infinite: true">
+                    <ul class="uk-slider-items">
+                        {% for item in post.meta('s2-testimonials') %}
+                        <li class="uk-width-1-1 uk-margin-left uk-margin-remove-top" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="first">
+                                    <div class="uk-cover-container uk-height-small uk-width-small">
+                                        <img src="{{ Image(item.image).src }}" uk-cover>
+                                    </div>
+                                </div>
+                                <div class="second">
+                                    <div class="uk-cover-container uk-height-small uk-width-small">
+                                        <img src="{{ Image(item.image).src }}" uk-cover>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand@s uk-position-relative">
+                                <svg class="quotion"><use href="#quote"></svg>
+                                <div class="uk-height-1-1 uk-flex uk-flex-middle uk-position-relative">
+                                    <div class="uk-margin-top">
+                                        <div class="text">
+                                            {{ item.text }}
+                                        </div>
+                                        <p class="uk-text-primary uk-text-bold uk-margin-remove">{{ item.name }}</p>
+                                        <a href="https://www.facebook.com/Szurikata/reviews/" class="uk-text-small uk-link-text">
+                                            <span uk-icon="icon:facebook; ratio: 0.75"></span>
+                                            még több vélemény a Facebookon
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+
             </div>
         </section>
 

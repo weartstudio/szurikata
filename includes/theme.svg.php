@@ -52,7 +52,16 @@ Class svgInsert extends Singleton
                     </g>
                     </g>
                 </g>
-                </symbol>
+            </symbol>
+
+            <symbol id="quote" width="219.893" height="189.967" viewBox="0 0 219.893 189.967">
+                <g id="left-quotes-sign" transform="translate(219.893 224.538) rotate(180)">
+                    <g id="Group_19" data-name="Group 19" transform="translate(0 34.571)">
+                    <path id="Path_16" data-name="Path 16" d="M.047,172.193A52.484,52.484,0,1,0,35.438,122.71C47.218,55.15,99.9,11.582,51.064,47.44-3.089,87.2-.011,170.594.049,172.122.049,172.146.047,172.167.047,172.193Z" transform="translate(0 -34.571)" fill="#f2f2f8"/>
+                    <path id="Path_17" data-name="Path 17" d="M266.108,172.193A52.484,52.484,0,1,0,301.5,122.71c11.78-67.56,64.463-111.128,15.626-75.27C262.971,87.2,266.049,170.594,266.11,172.122,266.11,172.146,266.108,172.167,266.108,172.193Z" transform="translate(-150.904 -34.571)" fill="#f2f2f8"/>
+                    </g>
+                </g>
+            </symbol>
 
         </svg>
     <?php }
