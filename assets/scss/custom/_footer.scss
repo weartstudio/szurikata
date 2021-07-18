@@ -1,5 +1,29 @@
 #w-footer{
+    margin-top: 100px;
+    #footerLogo{
+        text-align: center;
+        svg{
+            margin-top: -105px;
+            height: 190px;
+            width: 178px;
+            margin-left: -50px;
+        }
+        p{
+            margin: 0;
+            &.title{
+                font-family: $ff-title;
+                text-transform: uppercase;
+                color: $c-white;
+                font-size: $fs-xlarge;
+                margin-top: 1rem;
+            }
+            &.desc{
+                font-size: $fs-small;
+                text-transform: lowercase;
 
+            }
+        }
+    }
 
     h4.uk-text-secondary{
         color: $c-secondary !important;
