@@ -63,21 +63,6 @@
             "maxlength": "",
             "rows": 3,
             "new_lines": "wpautop"
-        },
-        {
-            "key": "field_60f4071fe3a46",
-            "label": "Gomb",
-            "name": "s1-link",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
         }
     ],
     "location": [
@@ -112,5 +97,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1626607092
+    "modified": 1631015473
 }

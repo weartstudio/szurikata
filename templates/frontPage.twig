@@ -15,7 +15,7 @@
                         <div class="uk-margin-large-right uk-text-lead">
                             {{ post.meta('s1-text') }}
                         </div>
-                        <a class="uk-button uk-button-secondary" href="{{ post.meta('s1-link').url }}">{{ post.meta('s1-link').title }}</a>
+                        <a class="uk-button uk-button-secondary" href="tel:{{ options.telefon }}"><span class=" fas fa-phone-alt uk-margin-small-right"></span>Kérjen időpontot</a>
                     </div>
                     <div class="uk-text-center">
                         <img src="{{ Image(post.meta('s1-image')).src }}">
@@ -40,9 +40,11 @@
                             <div class="uk-width-auto">
                                 <svg style="max-width: 65px; max-height: 52.42px; fill: #242c6d"><use href="#mancs"></svg>
                             </div>
-                            <div class="uk-width-expand uk-margin-left">
+                            <div class="uk-width-expand uk-margin-left uk-position-relative">
                                 <h5 class="uk-margin-remove">{{ item.title }}</h5>
-                                <p class="uk-margin-remove">{{ item.text }}</p>
+                                <div class="uk-overflow-hidden w-text">
+                                    <p class="uk-margin-remove">{{ item.text }}</p>
+                                </div>
                             </div>
                         </div>
                     {% endfor %}
@@ -63,6 +65,7 @@
                     <ul class="uk-slider-items">
                         {% for item in post.meta('testimonials') %}
                         <li class="uk-width-1-1 uk-margin-left uk-margin-remove-top" uk-grid>
+                            {% if image %}
                             <div class="uk-width-auto">
                                 <div class="first">
                                     <div class="uk-cover-container uk-height-small uk-width-small">
@@ -75,6 +78,7 @@
                                     </div>
                                 </div>
                             </div>
+                            {% endif %}
                             <div class="uk-width-expand@s uk-position-relative">
                                 <svg class="quotion"><use href="#quote"></svg>
                                 <div class="uk-height-1-1 uk-flex uk-flex-middle uk-position-relative">
@@ -113,7 +117,7 @@
                     <div class="right">{{ post.meta('s4-text-right') }}</div>
                 </div>
                 <div class="uk-flex uk-flex-center uk-margin-bottom">
-                    <a href="#contact" class="uk-button uk-button-secondary">kapcsolat</a>
+                    <a href="#contact" class="uk-button uk-button-secondary">Kapcsolat</a>
                 </div>
             </div>
         </section>
@@ -156,6 +160,7 @@
                     <ul class="uk-slider-items">
                         {% for item in post.meta('s2-testimonials') %}
                         <li class="uk-width-1-1 uk-margin-left uk-margin-remove-top" uk-grid>
+                            {% if image %}
                             <div class="uk-width-auto">
                                 <div class="first">
                                     <div class="uk-cover-container uk-height-small uk-width-small">
@@ -168,6 +173,7 @@
                                     </div>
                                 </div>
                             </div>
+                            {% endif %}
                             <div class="uk-width-expand@s uk-position-relative">
                                 <svg class="quotion"><use href="#quote"></svg>
                                 <div class="uk-height-1-1 uk-flex uk-flex-middle uk-position-relative">

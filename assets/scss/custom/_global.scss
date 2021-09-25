@@ -103,3 +103,47 @@ h5,.uk-h5{
         font-size: $fs-xlarge;
     }
 }
+
+#services{
+    h5{
+        padding: 0 .5rem;
+    }
+    .w-text{
+        &.uk-height-90{ height: 100px; }
+        position: relative;
+        transition: all ease-in-out .2s;
+        padding: .5rem;
+        &:hover{
+            height: fit-content !important;
+            max-height: fit-content !important;
+            @media (min-width: $breakpoint-small) {
+                position: absolute;
+                background: $c-light;
+            }
+            z-index: 2;
+            &:after{
+                display: none;
+            }
+        }
+        &:after{
+            content: "\f0d7";
+            content: "";
+            display: block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            height: 2rem;
+            line-height: 2rem;
+            background: white;
+            background: linear-gradient(to top, white, transparent);
+            @media (max-width: $breakpoint-small) {
+                display: none;
+            }
+        }
+
+    }
+}
