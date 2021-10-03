@@ -103,6 +103,25 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_61596c3d1a4f5",
+                    "label": "Beosztás",
+                    "name": "job",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_60f4406c3e6ef",
                     "label": "Szöveg",
                     "name": "text",
@@ -156,5 +175,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1626620961
+    "modified": 1633250429
 }

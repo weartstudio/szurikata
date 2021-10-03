@@ -87,10 +87,17 @@
                                             {{ item.text }}
                                         </div>
                                         <p class="uk-text-primary uk-text-bold uk-margin-remove">{{ item.name }}</p>
+                                        {% if item.or == "facebook" %}
                                         <a href="https://www.facebook.com/Szurikata/reviews/" class="uk-text-small uk-link-text">
                                             <span class="fab fa-facebook"></span>
                                             még több vélemény a facebookon
                                         </a>
+                                        {% else %}
+                                        <a href="https://www.google.com/maps/place/Szuri-K%C3%A1ta/@47.4505891,19.7013998,15z/data=!4m7!3m6!1s0x0:0xff2e99e51c1e185a!8m2!3d47.4505891!4d19.7013998!9m1!1b1" class="uk-text-small uk-link-text">
+                                            <span class="fab fa-google"></span>
+                                            még több vélemény a google-ön
+                                        </a>
+                                        {% endif %}
                                     </div>
                                 </div>
 
@@ -142,7 +149,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5 class="uk-margin">{{ item.name }}</h5>
+                            <h5 class="uk-margin uk-margin-remove-bottom">{{ item.name }}</h5>
+                            <p class="uk-margin-remove-top uk-text-primary">{{ item.job }}</p>
                             {{ item.text }}
                         </div>
                     {% endfor %}
@@ -182,10 +190,17 @@
                                             {{ item.text }}
                                         </div>
                                         <p class="uk-text-primary uk-text-bold uk-margin-remove">{{ item.name }}</p>
+                                        {% if item.or == "facebook" %}
                                         <a href="https://www.facebook.com/Szurikata/reviews/" class="uk-text-small uk-link-text">
                                             <span class="fab fa-facebook"></span>
                                             még több vélemény a facebookon
                                         </a>
+                                        {% else %}
+                                        <a href="https://www.google.com/maps/place/Szuri-K%C3%A1ta/@47.4505891,19.7013998,15z/data=!4m7!3m6!1s0x0:0xff2e99e51c1e185a!8m2!3d47.4505891!4d19.7013998!9m1!1b1" class="uk-text-small uk-link-text">
+                                            <span class="fab fa-google"></span>
+                                            még több vélemény a google-ön
+                                        </a>
+                                        {% endif %}
                                     </div>
                                 </div>
 
