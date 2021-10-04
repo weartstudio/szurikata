@@ -17,4 +17,4 @@ jobs:
         server: 79.139.62.188
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/wp-content/themes/weart.hu/
+        server-dir: /szurikata.hu/wp-content/themes/szurikata/
