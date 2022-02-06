@@ -15,7 +15,7 @@
                         <div class="uk-margin-large-right uk-text-lead">
                             {{ post.meta('s1-text') }}
                         </div>
-                        <a class="uk-button uk-button-secondary" href="tel:{{ options.telefon }}"><span class=" fas fa-phone-alt uk-margin-small-right"></span>Kérjen időpontot</a>
+                        <a class="uk-button uk-button-secondary" href="tel:+36204378035"><span class=" fas fa-phone-alt uk-margin-small-right"></span>Kérjen időpontot</a>
                     </div>
                     <div class="uk-text-center">
                         <img src="{{ Image(post.meta('s1-image')).src }}">
@@ -62,7 +62,7 @@
             <div class="uk-container uk-container-small">
 
                 <div class="uk-position-relative" uk-slider="autoplay: true; infinite: true">
-                    <ul class="uk-slider-items">
+                    <ul class="uk-slider-items uk-flex-top">
                         {% for item in post.meta('testimonials') %}
                         <li class="uk-width-1-1 uk-margin-left uk-margin-remove-top" uk-grid>
                             {% if image %}
@@ -165,7 +165,7 @@
             <div class="uk-container uk-container-small">
 
                 <div class="uk-position-relative" uk-slider="autoplay:true; infinite: true">
-                    <ul class="uk-slider-items">
+                    <ul class="uk-slider-items uk-flex-top">
                         {% for item in post.meta('s2-testimonials') %}
                         <li class="uk-width-1-1 uk-margin-left uk-margin-remove-top" uk-grid>
                             {% if image %}
